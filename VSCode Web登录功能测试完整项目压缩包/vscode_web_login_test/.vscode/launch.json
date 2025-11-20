@@ -1,0 +1,70 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: 运行所有测试",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/automation/login_test.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-v",
+                "--html=${workspaceFolder}/test_reports/automation_report.html"
+            ],
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/automation",
+                "LOG_LEVEL": "INFO"
+            }
+        },
+        {
+            "name": "Python: 运行特定测试用例",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/automation/login_test.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-v",
+                "login_test.py::TestLogin::test_valid_login"
+            ],
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/automation",
+                "LOG_LEVEL": "DEBUG"
+            }
+        },
+        {
+            "name": "Python: 生成测试报告",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/automation/login_test.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-v",
+                "--html=${workspaceFolder}/test_reports/automation_report.html",
+                "--self-contained-html"
+            ],
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/automation",
+                "LOG_LEVEL": "INFO"
+            }
+        },
+        {
+            "name": "Python: 调试模式",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/automation/login_test.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-v",
+                "--pdb"
+            ],
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/automation",
+                "LOG_LEVEL": "DEBUG"
+            }
+        }
+    ]
+}

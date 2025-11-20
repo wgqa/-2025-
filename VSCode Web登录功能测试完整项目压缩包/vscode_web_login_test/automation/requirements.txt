@@ -1,0 +1,59 @@
+# 自动化测试依赖包列表
+# 在VSCode环境中执行Web登录功能测试所需的Python包
+
+# Selenium - Web自动化测试框架
+selenium>=4.10.0
+
+# pytest - Python测试框架
+pytest>=7.4.0
+
+# pytest-html - HTML测试报告生成
+pytest-html>=3.2.0
+
+# pytest-xdist - 并行测试执行
+pytest-xdist>=3.3.1
+
+# webdriver-manager - 浏览器驱动管理
+webdriver-manager>=4.0.0
+
+# python-dotenv - 环境变量管理
+python-dotenv>=1.0.0
+
+# requests - HTTP请求库
+requests>=2.31.0
+
+# beautifulsoup4 - HTML解析库
+beautifulsoup4>=4.12.2
+
+# lxml - XML/HTML解析器
+lxml>=4.9.3
+
+# pillow - 图像处理库（截图处理）
+pillow>=10.0.0
+
+# python-logging-loki - Loki日志集成
+python-logging-loki>=0.3.1
+
+# typing-extensions - 类型提示支持
+typing-extensions>=4.7.1
+
+# colorlog - 彩色日志输出
+colorlog>=6.7.0
+
+# tqdm - 进度条显示
+tqdm>=4.65.0
+
+# pytest-cov - 测试覆盖率统计
+pytest-cov>=4.1.0
+
+# pytest-metadata - 测试元数据管理
+pytest-metadata>=3.0.0
+
+# 安装命令：
+# pip install -r requirements.txt
+
+# 升级命令：
+# pip install --upgrade -r requirements.txt
+
+# 导出当前环境依赖：
+# pip freeze > requirements.txt
